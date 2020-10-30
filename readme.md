@@ -6,28 +6,28 @@ java调用c++程序，c++程序在window环境中的格式为.dll，在linux环�
 )
 
 <h2>1. DOckerfile文件使用必备环境</h2>
-  1. xxx.jar
-  2. Dockerfile
-  3. libxxx.so (最好是和Dockerfile文件放置于同一目录下，不然会报找不到so文件)
+  1. xxx.jar </br>
+  2. Dockerfile </br>
+  3. libxxx.so (最好是和Dockerfile文件放置于同一目录下，不然会报找不到so文件) </br>
  
  <h2>2. 打包镜像</h2>
-  1. 打包命令 </br>
-    docker build -t xxx.jar
+  1. 打包命令 </br> 
+    docker build -t xxx.jar </br>
   2. 查看镜像 </br>
-    docker images
+    docker images </br>
  
  <h2>3. 启动镜像</h2>
   1. 启动命令 </br>
-    docker run -dp 7788:7788 xxx.jar
+    docker run -dp 7788:7788 xxx.jar </br>
 
  <h2>4. 拷贝镜像</h2>
   1. 拷贝命令 </br>
-    docker save -o xxx.tar 镜像名称
+    docker save -o xxx.tar 镜像名称 </br>
   2. 查看拷贝 </br>
-    该命令执行后，会在当前生成一个xxx.tar的镜像文件
+    该命令执行后，会在当前生成一个xxx.tar的镜像文件 </br>
     
   <h2>5. 导入镜像</h2>
    1. 导入命令 </br>
-     docker load < xxx.tar
+     docker load < xxx.tar </br>
    2. 查看镜像 </br>
-     docker images
+     docker images </br>
