@@ -19,6 +19,8 @@ java调用c++程序，c++程序在window环境中的格式为.dll，在linux环�
  <h2>3. 启动镜像</h2>
   1. 启动命令 </br>
     docker run -dp 7788:7788 xxx.jar </br>
+  2. 如果启动后自动停止，可以使用前台启动 </br>
+    docker run -it xxx.jar </br>
 
  <h2>4. 拷贝镜像</h2>
   1. 拷贝命令 </br>
