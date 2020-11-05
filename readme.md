@@ -11,7 +11,7 @@ java调用c++程序，c++程序在window环境中的格式为.dll，在linux环�
   3. libxxx.so (最好是和Dockerfile文件放置于同一目录下，不然会报找不到so文件) </br>
  
  <h2>2. 打包镜像</h2>
-  1. 打包命令 </br> 
+  1. 打包命令 (注意jar后面的点) </br> 
     docker build -t xxx.jar . </br>
   2. 查看镜像 </br>
     docker images </br>
